@@ -4,19 +4,18 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Decoration from '../../components/Decoration';
 
-const RegisterRecruiter = () => {
-  const router = useRouter();
+const RegisterWorker = () => {
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: '',
     email: '',
-    companyName: '',
-    position: '',
     phone: '',
     password: '',
     confirmPassword: '',
   });
-  const onSubmit = (e) => {};
+  const onSubmit = (e) => {
+    console.log(e);
+  };
   return (
     <Fragment>
       <style jsx>
@@ -35,7 +34,7 @@ const RegisterRecruiter = () => {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top:34vh;
+            margin-top:15vh;
             margin-bottom:10vh
           }
           .form {
@@ -57,7 +56,7 @@ const RegisterRecruiter = () => {
         `}
       </style>
       <Head>
-        <title>Register as Recruiter</title>
+        <title>Register as Worker</title>
       </Head>
       <div className='body'>
         <Decoration />
@@ -68,126 +67,81 @@ const RegisterRecruiter = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
               euismod ipsum et dui rhoncus auctor.
             </div>
-            <form
-              onSubmit={(e) => {
-                onSubmit(e);
-              }}
-            >
+            <form onSubmit={(e) => onSubmit(e)}>
               <div className='mt-5'>
-                <div className='row d-flex justify-content-center align-items-center'>
-                  <div className='col-md-12 mb-4'>
+                <div className='row d-flex'>
+                  <div className='col-md-12 mb-3'>
                     <div className='form-group text-muted'>
-                      <label className='mb-1' htmlFor='name'>
-                        Nama
-                      </label>
+                      <label htmlFor='nama'>Nama</label>
                       <input
                         type='text'
                         className='form-control'
                         id='name'
-                        placeholder='Masukan nama panjang'
+                        placeholder='Masukkan Nama Panjang'
                         onChange={(e) =>
                           setForm({ ...form, name: e.target.value })
                         }
                       />
                     </div>
                   </div>
-                  <div className='col-md-12 mb-4'>
+                  <div className='col-md-12 mb-3'>
                     <div className='form-group text-muted'>
-                      <label className='mb-1' htmlFor='email'>
-                        Email
-                      </label>
+                      <label htmlFor='email'>Email</label>
                       <input
                         type='text'
                         className='form-control'
                         id='email'
-                        placeholder='Masukan alamat email'
+                        placeholder='Masukkan alamat email'
                         onChange={(e) =>
                           setForm({ ...form, email: e.target.value })
                         }
                       />
                     </div>
                   </div>
-                  <div className='col-md-12 mb-4'>
+                  <div className='col-md-12 mb-3'>
                     <div className='form-group text-muted'>
-                      <label htmlFor='company' className='mb-1'>
-                        Perusahaan
-                      </label>
-                      <input
-                        type='text'
-                        className='form-control'
-                        id='company'
-                        placeholder='Masukan nama perusahaan'
-                        onChange={(e) =>
-                          setForm({ ...form, companyName: e.target.value })
-                        }
-                      />
-                    </div>
-                  </div>
-                  <div className='col-md-12 mb-4'>
-                    <div className='form-group text-muted'>
-                      <label htmlFor='position' className='mb-1'>
-                        jabatan
-                      </label>
-                      <input
-                        type='text'
-                        className='form-control'
-                        id='position'
-                        placeholder='Posisi di perusahaan anda'
-                        onChange={(e) =>
-                          setForm({ ...form, position: e.target.value })
-                        }
-                      />
-                    </div>
-                  </div>
-                  <div className='col-md-12 mb-4'>
-                    <div className='form-group text-muted'>
-                      <label htmlFor='phone' className='mb-1'>
-                        No handphone
-                      </label>
+                      <label htmlFor='phone'>No Handphone</label>
                       <input
                         type='text'
                         className='form-control'
                         id='phone'
-                        placeholder='Masukan no handphone'
+                        placeholder='Masukkan No Handphone'
                         onChange={(e) =>
                           setForm({ ...form, phone: e.target.value })
                         }
                       />
                     </div>
                   </div>
-                  <div className='col-md-12 mb-4'>
+                  <div className='col-md-12 mb-3'>
                     <div className='form-group text-muted'>
-                      <label htmlFor='password' className='mb-1'>
-                        Kata Sandi
-                      </label>
+                      <label htmlFor='password'>Kata Sandi</label>
                       <input
                         type='password'
                         className='form-control'
                         id='password'
-                        placeholder='Masukan kata sandi'
+                        placeholder='Masukkan kata sandi'
                         onChange={(e) =>
                           setForm({ ...form, password: e.target.value })
                         }
                       />
                     </div>
                   </div>
-                  <div className='col-md-12 mb-4'>
+                  <div className='col-md-12 mb-3'>
                     <div className='form-group text-muted'>
-                      <label htmlFor='confirmPassword' className='mb-1'>
+                      <label htmlFor='confirmPassword'>
                         Konfirmasi kata sandi
                       </label>
                       <input
-                        type='text'
+                        type='password'
                         className='form-control'
                         id='confirmPassword'
-                        placeholder='Masukan kata sandi'
+                        placeholder='Masukan konfirmasi kata sandi'
                         onChange={(e) =>
                           setForm({ ...form, confirmPassword: e.target.value })
                         }
                       />
                     </div>
                   </div>
-
                   <div className='col-md-12 flex-column justify-content-center align-content-center'>
                     {loading ? (
                       <button
@@ -216,26 +170,19 @@ const RegisterRecruiter = () => {
             <div className='row'>
               <div className='col-12 d-flex justify-content-center align-items-center mt-5'>
                 <span className='text-black'>
-                  Anda sudah punya akun recruiter?{' '}
+                  Anda sudah punya akun pekerja?{' '}
                 </span>
-                <div className='text-reset text-decoration-none ms-2'>
-                  <Link
-                    style={{ textDecoration: 'none' }}
-                    className='text-decoration-none'
-                    href='/login_recruiter'
-                  >
-                    Masuk Disini
-                  </Link>
-                </div>
+                <Link href='/login_worker' className='text-decoration-none'>
+                  Masuk Disini
+                </Link>
               </div>
             </div>
             <div className='row mt-5 mb-5'>
               <div className='col-12 d-flex justify-content-center align-items-center'>
-                <span className='text-black'>Daftar sebagai worker? </span>
+                <span className='text-black'>Daftar sebagai perekrut? </span>
                 <Link
-                  style={{ textDecoration: 'none' }}
-                  href='/register_worker'
-                  className='register'
+                  href='/register_recruiter'
+                  className='text-decoration-none'
                 >
                   Daftar Disini
                 </Link>
@@ -248,4 +195,4 @@ const RegisterRecruiter = () => {
   );
 };
 
-export default RegisterRecruiter;
+export default RegisterWorker;
