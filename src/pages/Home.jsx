@@ -29,7 +29,8 @@ const Home = () => {
           <div className='w-3/4 h-[80%] ml-auto mr-auto flex items-center justify-center hover:scale-105'>
             <img
               src={topLandingImg}
-              alt=''
+              alt='image top landing'
+              loading='lazy'
               className='w-full h-full object-contain'
             />
           </div>
@@ -41,7 +42,8 @@ const Home = () => {
           <div className='w-3/4 h-[80%] ml-auto mr-auto flex items-center justify-center hover:scale-105'>
             <img
               src={midLandingImg}
-              alt=''
+              alt='image middle landing'
+              loading='lazy'
               className='w-full h-full object-contain'
             />
           </div>
@@ -79,7 +81,8 @@ const Home = () => {
           <div className='w-3/4 h-[80%] ml-auto mr-auto flex items-center justify-center hover:scale-105'>
             <img
               src={bottomLandingImg}
-              alt=''
+              alt='image bottom landing'
+              loading='lazy'
               className='w-full h-full object-contain'
             />
           </div>
