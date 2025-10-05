@@ -1,5 +1,13 @@
 @import "tailwindcss";
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('./assets/fonts/Cascadia.ttf');
+  font-weight: lighter;
+  font-style: normal;
+  font-display: swap;
+}
 body {
+  font-family: 'Cascadia Code', monospace ;
   padding-left: 5px;
   padding-right: 5px;
   min-width: 100%;
