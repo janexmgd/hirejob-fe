@@ -88,6 +88,15 @@ export default function RecruiterForm() {
           Register
         </button>
       </form>
+      <p className='text-xs sm:text-sm'>
+        sudah punya akun ?
+        <span
+          className='text-yellow-400 hover:cursor-pointer ps-3'
+          onClick={() => navigate('/login')}
+        >
+          Login
+        </span>
+      </p>
     </div>
   );
 }

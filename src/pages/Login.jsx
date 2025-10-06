@@ -24,13 +24,13 @@ export default function Login() {
   return (
     <div className='flex flex-row h-screen w-screen'>
       <Decoration />
-      <div className='w-full sm:w-1/2 h-full flex flex-col p-16 space-y-4'>
+      <div className='w-full md:w-1/2 h-full flex flex-col p-16 space-y-4'>
         <p className='text-2xl'>Hello</p>
         <p className='text-gray-700 mt-2'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod
           ipsum et dui rhoncus auctor.
         </p>
-        <form onSubmit={handleLogin} className='mt-4 flex flex-col space-y-4'>
+        <form onSubmit={handleLogin} className=' flex flex-col space-y-4'>
           <div className='flex flex-col space-y-2'>
             <p className='text-gray-700 text-sm'>Email</p>
             <input
