@@ -53,24 +53,24 @@ const Home = () => {
             kenapa harus mencari talenta disini
           </p>
           <ul className='list-disc list-inside text-gray-500 mt-3 tracking-widest w-full marker:text-purple-700 marker:font-bold'>
-            <li className='text-sm sm:text-xs'>Lorem ipsum dolor sit amet,</li>
-            <li className='text-sm sm:text-xs'>Lorem ipsum dolor sit amet,</li>
-            <li className='text-sm sm:text-xs'>Lorem ipsum dolor sit amet,</li>
-            <li className='text-sm sm:text-xs'>Lorem ipsum dolor sit amet,</li>
+            <li className='text-xs sm:text-sm'>Lorem ipsum dolor sit amet,</li>
+            <li className='text-xs sm:text-sm'>Lorem ipsum dolor sit amet,</li>
+            <li className='text-xs sm:text-sm'>Lorem ipsum dolor sit amet,</li>
+            <li className='text-xs sm:text-sm'>Lorem ipsum dolor sit amet,</li>
           </ul>
         </div>
       </section>
 
       <section className='sectionThree flex w-full h-screen'>
         <div className='w-full sm:w-1/2 flex flex-col justify-center items-center'>
-          <p className='text-3xl sm:text-xl tracking-wider capitalize w-3/4 font-bold'>
+          <p className='text-xl sm:text-3xl tracking-wider capitalize w-full sm:w-3/4 font-bold'>
             Skill Talent
           </p>
-          <p className='text-gray-500 mt-3 w-3/4 tracking-widest text-sm sm:text-xs'>
+          <p className='text-gray-500 mt-3 w-full sm:w-3/4 tracking-widest text-sm sm:text-xs'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod
             ipsum et dui rhoncus auctor.
           </p>
-          <ul className='list-disc list-inside text-gray-500 mt-3 tracking-widest w-3/4 marker:text-yellow-200 marker:font-bold marker:text-2xl sm:marker:text-lg'>
+          <ul className='list-disc list-inside text-gray-500 mt-3 tracking-widest w-full sm:w-3/4 marker:text-yellow-200 marker:font-bold marker:text-2xl sm:marker:text-lg'>
             <li className='text-sm sm:text-xs'>Golang</li>
             <li className='text-sm sm:text-xs'>Javascript</li>
             <li className='text-sm sm:text-xs'>Rust</li>

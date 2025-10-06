@@ -59,7 +59,7 @@ export default function Login() {
             Login
           </button>
         </form>
-        <p>
+        <p className='text-xs sm:text-sm'>
           Anda belum punya akun ?
           <span
             className='text-yellow-400 hover:cursor-pointer ps-3'
