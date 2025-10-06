@@ -1,7 +1,7 @@
 import imgS from '../assets/images/landing_page_top.png';
 export default function Decoration() {
   return (
-    <div className='hidden sm:block w-1/2 m-10'>
+    <div className='hidden md:block w-1/2 p-10 h-screen sticky top-0'>
       <div className='w-full h-full relative'>
         <img
           src={imgS}

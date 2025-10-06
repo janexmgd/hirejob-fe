@@ -22,7 +22,7 @@ export default function Login() {
     }
   };
   return (
-    <div className='flex flex-row h-screen w-screen overflow-hidden'>
+    <div className='flex flex-row h-screen w-screen'>
       <Decoration />
       <div className='w-full sm:w-1/2 h-full flex flex-col p-16 space-y-4'>
         <p className='text-2xl'>Hello</p>
