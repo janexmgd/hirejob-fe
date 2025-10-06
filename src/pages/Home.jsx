@@ -6,10 +6,10 @@ import bottomLandingImg from '../assets/images/landing_page_bottom.jpg';
 
 const Home = () => {
   return (
-    <div className='flex flex-col min-h-screen w-full sm:pl-16 sm:pr-16 pl-32 pr-32'>
+    <div className='flex flex-col min-h-screen w-full pl-16 pr-16'>
       <Navbar />
       <section className='sectionOne flex w-full h-[90vh]'>
-        <div className='w-1/2 flex flex-col justify-center items-center'>
+        <div className='w-full sm:w-1/2 flex flex-col justify-center items-center'>
           <div className='flex flex-col items-start w-full'>
             <div className='text-3xl sm:text-xl tracking-wider capitalize font-bold'>
               talenta terbaik negeri untuk perubahan revolusi 4.0
@@ -25,7 +25,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='w-1/2 flex flex-col justify-center items-center'>
+        <div className='hidden sm:w-1/2 sm:flex flex-col justify-center items-center'>
           <div className='w-3/4 h-[80%] ml-auto mr-auto flex items-center justify-center hover:scale-105'>
             <img
               src={topLandingImg}
@@ -38,7 +38,7 @@ const Home = () => {
       </section>
 
       <section className='sectionTwo flex w-full h-screen '>
-        <div className='w-1/2 flex flex-col justify-center items-center'>
+        <div className='hidden sm:w-1/2 sm:flex  flex-col justify-center items-center'>
           <div className='w-3/4 h-[80%] ml-auto mr-auto flex items-center justify-center hover:scale-105'>
             <img
               src={midLandingImg}
@@ -48,7 +48,7 @@ const Home = () => {
             />
           </div>
         </div>
-        <div className='w-1/2 flex flex-col justify-center items-center'>
+        <div className='w-full sm:w-1/2 flex flex-col justify-center items-center'>
           <p className='text-3xl sm:text-xl tracking-wider capitalize w-full font-bold'>
             kenapa harus mencari talenta disini
           </p>
@@ -62,7 +62,7 @@ const Home = () => {
       </section>
 
       <section className='sectionThree flex w-full h-screen'>
-        <div className='w-1/2 flex flex-col justify-center items-center'>
+        <div className='w-full sm:w-1/2 flex flex-col justify-center items-center'>
           <p className='text-3xl sm:text-xl tracking-wider capitalize w-3/4 font-bold'>
             Skill Talent
           </p>
@@ -77,7 +77,7 @@ const Home = () => {
             <li className='text-sm sm:text-xs'>Python</li>
           </ul>
         </div>
-        <div className='w-1/2 flex flex-col justify-center items-center'>
+        <div className='hidden sm:w-1/2 sm:flex  flex-col justify-center items-center'>
           <div className='w-3/4 h-[80%] ml-auto mr-auto flex items-center justify-center hover:scale-105'>
             <img
               src={bottomLandingImg}
