@@ -1,17 +1,13 @@
-import {
-  FaSearch,
-  FaLocationArrow,
-  FaMapMarked,
-  FaMap,
-  FaMarker,
-} from 'react-icons/fa';
+import { FaMarker } from 'react-icons/fa';
 import avatr from '../assets/images/avatar.jpg';
+
 export default function HomeCard() {
   return (
-    <div className='w-full p-4 flex items-center justify-between transition-all duration-200 border-b-1 border-gray-200'>
-      <div className='flex items-center gap-4'>
+    <div className='w-full p-4 flex flex-col md:flex-row items-center md:items-start justify-between gap-4 border-b border-gray-200 transition-all duration-200'>
+      {/* Left: Avatar + Info */}
+      <div className='flex items-center md:items-start gap-4 w-full md:w-auto'>
         {/* Avatar */}
-        <div className='w-18 h-18 md:w-24 md:h-24 rounded-full overflow-hidden flex-shrink-0'>
+        <div className='w-16 h-16 md:w-24 md:h-24 rounded-full overflow-hidden flex-shrink-0'>
           <img
             src={avatr}
             alt='avatar'
@@ -33,21 +29,21 @@ export default function HomeCard() {
 
           {/* Skills */}
           <div className='flex flex-wrap gap-1 mt-2'>
-            <span className='bg-yellow-400 text-white text-xs md:text-xs px-3 py-1 rounded-md shadow-sm'>
+            <span className='bg-yellow-400 text-white text-xs px-3 py-1 rounded-md shadow-sm'>
               PHP
             </span>
-            <span className='bg-yellow-400 text-white text-xs md:text-xs px-3 py-1 rounded-md shadow-sm'>
+            <span className='bg-yellow-400 text-white text-xs px-3 py-1 rounded-md shadow-sm'>
               JavaScript
             </span>
-            <span className='bg-yellow-400 text-white text-xs md:text-xs px-3 py-1 rounded-md shadow-sm'>
+            <span className='bg-yellow-400 text-white text-xs px-3 py-1 rounded-md shadow-sm'>
               HTML
             </span>
           </div>
         </div>
       </div>
 
-      {/* Right: Button */}
-      <button className='bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md text-xs md:text-sm font-medium transition-all duration-200'>
+      {/* Button */}
+      <button className='bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md text-xs md:text-sm font-medium transition-all duration-200 w-full md:w-auto'>
         Lihat Profile
       </button>
     </div>
