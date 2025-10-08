@@ -15,7 +15,6 @@ export default function Login() {
           return;
         }
       }
-      setErr('');
       console.log(form);
     } catch (error) {
       alert(error);

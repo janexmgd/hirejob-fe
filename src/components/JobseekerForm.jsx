@@ -9,7 +9,25 @@ export default function JoobseekerForm() {
     password: '',
     confirmPassword: '',
   });
+  const handleRegister = (e) => {
+    try {
+      e.preventDefault();
+      setErr('');
+      for (const [key, value] of Object.entries(form)) {
+        if (!value) {
+          setErr(`${key} can't be empty`);
+          return;
+        }
+      }
+      console.log(form);
+    } catch (error) {
+      alert(error.message || 'error');
+    }
+  };
   const [err, setErr] = useState('');
+  useEffect(() => {
+    setErr('');
+  }, [form]);
   useEffect(() => {
     setErr('');
     if (form.password != form.confirmPassword) {
@@ -22,7 +40,7 @@ export default function JoobseekerForm() {
       <p className='text-gray-700'>
         Bergabung bersama kami sebagai pencari kerja
       </p>
-      <form onSubmit='' className='flex flex-col space-y-4'>
+      <form onSubmit={handleRegister} className='flex flex-col space-y-4'>
         <div className='flex flex-col space-y-2'>
           <p className='text-gray-700 text-sm'>Nama</p>
           <input
