@@ -5,7 +5,7 @@ export default function Navbar() {
     navigate(path);
   };
   return (
-    <nav className='w-full h-[10vh] flex justify-center items-center'>
+    <nav className='w-full h-[10vh] flex justify-center items-center px-8 md:px-16 '>
       <div
         className='text-xl italic hover:scale-110 cursor-pointer'
         onClick={() => handleNavigate('/')}

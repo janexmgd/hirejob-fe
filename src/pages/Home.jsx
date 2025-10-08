@@ -5,9 +5,9 @@ import Footer from '../components/Footer.jsx';
 
 export default function Home() {
   return (
-    <div className='flex flex-col min-h-screen w-full px-8 md:px-16 bg-[#F6F7F8]'>
+    <div className='flex flex-col min-h-screen w-full '>
       <Navbar />
-      <div className='w-full mt-4 md:mt-8 flex flex-col md:flex-row gap-2 items-stretch bg-white text-gray-500 p-2 rounded-md shadow-sm'>
+      <div className='w-full mt-4 md:mt-8 flex flex-col md:flex-row gap-2 items-stretch text-gray-500 p-2 rounded-md bg-white px-8 md:px-16 '>
         {/* Input + Icon */}
         <div className='flex flex-row items-center border border-gray-300 rounded-md flex-grow'>
           <input
@@ -29,7 +29,7 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <section className='bg-white mt-4 md:mt-8 gap-3 flex flex-col'>
+      <section className='bg-white mt-4 md:mt-8 gap-3 flex flex-col px-8 md:px-16 '>
         <HomeCard />
         <HomeCard />
         <HomeCard />

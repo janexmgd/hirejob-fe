@@ -6,9 +6,9 @@ import bottomLandingImg from '../assets/images/landing_page_bottom.jpg';
 
 const LandingPage = () => {
   return (
-    <div className='flex flex-col min-h-screen w-full pl-8 pr-8 md:pl-16 md:pr-16'>
+    <div className='flex flex-col min-h-screen w-full pl-8 pr-8'>
       <Navbar />
-      <section className='sectionOne flex w-full h-[90vh]'>
+      <section className='sectionOne flex w-full h-[90vh] px-8 md:px-16 '>
         <div className='w-full md:w-1/2 flex flex-col justify-center items-center'>
           <div className='flex flex-col items-start w-full'>
             <div className='text-3xl md:text-xl tracking-wider capitalize font-bold'>
@@ -37,7 +37,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className='sectionTwo flex w-full h-screen '>
+      <section className='sectionTwo flex w-full h-screen px-8 md:px-16 '>
         <div className='hidden md:w-1/2 md:flex  flex-col justify-center items-center'>
           <div className='w-3/4 h-[80%] ml-auto mr-auto flex items-center justify-center hover:scale-105'>
             <img
@@ -61,7 +61,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section className='sectionThree flex w-full h-screen'>
+      <section className='sectionThree flex w-full h-screen px-8 md:px-16 '>
         <div className='w-full md:w-1/2 flex flex-col justify-center items-center'>
           <p className='text-xl md:text-3xl tracking-wider capitalize w-full md:w-3/4 font-bold'>
             Skill Talent
