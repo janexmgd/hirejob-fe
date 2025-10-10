@@ -4,6 +4,7 @@ import Login from './pages/Login.jsx';
 import NotFound from './pages/NotFound.jsx';
 import Register from './pages/Register.jsx';
 import Home from './pages/Home.jsx';
+import Profile from './pages/Profile.jsx';
 export default function Router() {
   return (
     <BrowserRouter>
@@ -12,6 +13,7 @@ export default function Router() {
         <Route path='/home' element={<Home />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/profile' element={<Profile />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>

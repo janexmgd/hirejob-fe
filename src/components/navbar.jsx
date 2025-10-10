@@ -14,13 +14,13 @@ export default function Navbar() {
       </div>
       <div className='ml-auto space-x-4'>
         <button
-          className='bg-white cursor-pointer text-purple-700 outline outline-purple-700 p-1.5 hover:scale-110'
+          className='bg-white cursor-pointer rounded-md text-purple-700 outline outline-purple-700 p-1.5 hover:scale-110'
           onClick={() => handleNavigate('/login')}
         >
           Masuk
         </button>
         <button
-          className='bg-purple-700 cursor-pointer text-white p-1.5 hover:scale-110'
+          className='bg-purple-700 cursor-pointer rounded-md rounded-fu text-white p-1.5 hover:scale-110'
           onClick={() => handleNavigate('/register')}
         >
           Daftar

@@ -12,7 +12,6 @@ export default function Home() {
         Top worker
       </div>
       <div className='w-full  flex flex-col md:flex-row gap-2 items-stretch text-gray-500 p-2 rounded-md bg-white px-8 md:px-16'>
-        {/* Input + Icon */}
         <div className='flex flex-row items-center border border-gray-300 rounded-md flex-grow'>
           <input
             type='text'
@@ -22,7 +21,6 @@ export default function Home() {
           <FaSearch className='text-gray-400 mr-3' />
         </div>
 
-        {/* Tombol sort dan search */}
         <div className='flex flex-row md:flex-row gap-2'>
           <button className='flex justify-center items-center p-2 border border-gray-300 rounded-md md:w-auto w-full'>
             Sort
